@@ -7,18 +7,22 @@ public class lab5192 {
 		int insert_value, idx;
 
 		Scanner scnr = new Scanner(System.in);
-		insert_value = scnr.nextInt();
+		insert_value = scnr.nextInt(); // 25, 0, 55
 
 		for (idx = 0; idx < length; ++idx) {
-			if (insert_value < numbers[idx]) {
+			if (insert_value < numbers[idx]) { // 25 < 30
 				break;
 			}
 		}
 
-		// for( )
+		// idx = 2
+
+		// for(int i=length-1; i >= idx; i--)
 		// shift right from idx to length-1
 
-		numbers[idx] = insert_value;
+		numbers[5] = insert_value;
+		length += 1;
+		scnr.close();
 	}
 
 }
