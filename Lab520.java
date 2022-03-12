@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class zyLab520 {
+public class Lab520 {
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
 		int idx, length, target, flag;
