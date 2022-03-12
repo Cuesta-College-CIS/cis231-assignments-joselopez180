@@ -24,6 +24,8 @@ public class Lab520 {
 		for (int i = 0; i < length; i++)
 			System.out.print(numbers[i] + " ");
 		System.out.println();
+		System.out.println();
+		System.out.println();
 
 		scnr.close();
 	}
