@@ -26,7 +26,7 @@ public class Lab520 {
 		System.out.println();
 		System.out.println();
 		System.out.println();
-
+		// hello proff! :D
 		scnr.close();
 	}
 
