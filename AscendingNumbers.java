@@ -67,7 +67,7 @@ public class AscendingNumbers {
 
                 System.out.print(" " + num2);
             }
-
+//gghngh
             else {
                 System.out.print(" " + num2);
 
