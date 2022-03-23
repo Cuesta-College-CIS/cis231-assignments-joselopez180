@@ -20,7 +20,7 @@ public class quiz1 {
         //this will find the idx location of the smallest #
         for(i=0; i<CNT; ++i ){
             
-            for( j=0; j<N; ++j){
+            for( j=i+1; j<N; ++j){
                 if(numbers[j]<minval){
                     minval=numbers[j];
                     minidx=j;
