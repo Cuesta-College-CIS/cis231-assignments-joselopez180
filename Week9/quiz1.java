@@ -32,10 +32,6 @@ public class quiz1 {
             numbers[i]=numbers[minidx];
             numbers[minidx]=tmp;
 
-            
-
-
-
             //outprint the array
             System.out.println(Arrays.toString(numbers));
         }
