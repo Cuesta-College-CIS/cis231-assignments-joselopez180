@@ -14,12 +14,12 @@ public class quiz1 {
 			numbers[i] = scnr.nextInt();
 
 		// Your code
-        minidx=0;
-        minval=numbers[0];
         int i,j=0;
         //this will find the idx location of the smallest #
         for(i=0; i<CNT; ++i ){
-            
+            minval=numbers[i];
+            minidx=i;
+
             for( j=i+1; j<N; ++j){
                 if(numbers[j]<minval){
                     minval=numbers[j];
