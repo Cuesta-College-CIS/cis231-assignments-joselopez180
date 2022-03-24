@@ -1,3 +1,14 @@
+/*
+    Program Name: quiz1.java
+    Author: Jose Antonio Lopez
+    Date: 03/24/2022
+    Program Description (brief): 
+        This code will find the first five smallest elements in 
+    the original array and swap places with another element 
+    only once so that the first five numbers are smallest to
+    biggest in ascending order in the updated final, array.
+*/
+
 package Week9;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -15,6 +26,7 @@ public class quiz1 {
 
 		// Your code
         int i,j=0;
+
         //this will find the idx location of the smallest #
         for(i=0; i<CNT; ++i ){
             minval=numbers[i];
@@ -35,10 +47,6 @@ public class quiz1 {
             //outprint the array
             System.out.println(Arrays.toString(numbers));
         }
-
-
-
-
 		scnr.close();
 	}
 }
