@@ -1,5 +1,5 @@
 /*
-    Program Name: FibonacciSeq.java
+    Program Name: Assignment_6_2.java
     Author: Jose Antonio Lopez
     Date: 04/07/2022
     Program Description (brief): 

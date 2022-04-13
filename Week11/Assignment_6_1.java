@@ -1,5 +1,5 @@
 /*
-    Program Name: SwappingVariables.java
+    Program Name: Assignment_6_1.java
     Author: Jose Antonio Lopez
     Date: 04/06/2022
     Program Description (brief): 
