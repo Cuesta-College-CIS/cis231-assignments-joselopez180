@@ -75,7 +75,8 @@ public class Quiz4 {
         String cName;
         Integer cCredit;
         String cGrade;
-
+        Integer sID;
+        String sName;
  
         System.out.println("Enter the number of students:");
         numStudents = scnr.nextInt();
@@ -86,12 +87,11 @@ public class Quiz4 {
             
             //Prompt the user to enter the name of the student.
             System.out.println("Enter student " + (i+1) + "'s name: ");
-            String snameInput = scnr.next();
-            scnr.nextLine();
+            sName = scnr.next();
 
             //Prompt the user to enter the students ID number.
             System.out.println("Enter student " + (i+1) + "'s ID number: ");
-            Integer sidInput = scnr.nextInt();
+            sID = scnr.nextInt();
 
             //Prompt the user to enter the students amount of courses.
             System.out.println("Enter the amount of courses student " + (i+1) + " has taken: ");
@@ -121,7 +121,7 @@ public class Quiz4 {
             }
 
             //New array list of sutdent information with the course information array with it.
-            Student student = new Student(sidInput, snameInput, stuCourses);
+            Student student = new Student(sID, sName, stuCourses);
 
             //add all the informaion of each student to the specicfic array list, "studentInfo"  in each element.
             studentInfo.add(student);
