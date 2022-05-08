@@ -131,7 +131,7 @@ public class Quiz4 {
        return studentInfo;
     }
  
-    //Out prints the greastest amount of credits from the student.
+    // Out prints the greastest amount of credits from the student.
     public static void printStudent(ArrayList<Student> slist) {
  
         for (int i = 0; i < slist.size(); ++i) {
@@ -171,7 +171,7 @@ public class Quiz4 {
                 maxId = i;
                 maxCr = tot;
              } 
-             
+
          }
 
         return maxId;
