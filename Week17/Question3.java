@@ -1,3 +1,17 @@
+/*
+    Program Name: Question3.java
+    Author: Jose Antonio Lopez
+    Date: 05/19/2022
+    Program Description (brief): 
+        This code will out-print student information
+    including: name, student Id, date of birth, 
+    courses name, course Id, score, grade, and 
+    total credits. This code inherits and uses
+    abrstract to organize the code into parts.
+
+*/
+
+
 import java.util.ArrayList;
 import java.io.FileNotFoundException;
 
