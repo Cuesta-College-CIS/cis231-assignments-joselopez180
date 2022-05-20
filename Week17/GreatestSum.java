@@ -10,7 +10,8 @@
     generated integers from (0-99). Then, the 
     code will out-print this random array list
     and finally out-print the greatest sum of 
-    three numbers from the array-list.
+    three consecutive numbers from the 
+    array-list.
 */
 
 
@@ -56,20 +57,39 @@ public class GreatestSum {
 
     //This method will find the greatest sum of only 3 numbers from the array.
     static ArrayList<Integer> greatestSum(ArrayList<Integer> thisrandomArray,int thisUserInput){
-        int max1 = 0;
-        int max2 = 0;
-        int max3 = 0;
+        ArrayList<Integer> finalArray = new ArrayList<Integer>();
+        int tempIdx = 0;
+        int finalSum = 0;
+        int tempSum = 0;
+        int consecNum = 3;
 
-        Collections.sort(thisrandomArray);
+        for (int i = 0; i<(thisrandomArray.size() - 2); ++i) {
+            finalSum = 0;
 
-        max1 = thisrandomArray.get(thisrandomArray.size()-1);
-        max2 = thisrandomArray.get(thisrandomArray.size()-2);
-        max3 = thisrandomArray.get(thisrandomArray.size()-3);
+            for(int j=0; j<consecNum; ++j)
+            finalSum += thisrandomArray.get(j+i);
+
+            if (finalSum > tempSum){
+                tempIdx = i;
+                tempSum = finalSum;
+            }
+        }  
+
+        //Make the new array list with the greatest consecutive sum.
+        for(int i=0; i<consecNum; ++i){
+            finalArray.add(thisrandomArray.get(tempIdx+i));
+        }
 
         System.out.println();
         System.out.println();
         System.out.println("The greatest sum from 3 integers: ");
-        System.out.println(max1 + " " + max2 + " "+ max3);
+
+        //out print the elements of the greatest consecutive sum.
+        for(int i=0; i<finalArray.size(); ++i){
+            System.out.print(finalArray.get(i) + " ");
+        }
+     
+        System.out.println();
 
         return thisrandomArray;
     }
